@@ -17,12 +17,13 @@ La funzione chiede in ingresso una parola
     Ad ogni ciclola i aumenta di uno e j diminuisce di uno
     Il ciclo si interrompe quando la seconda variabile è minore o ugale alla prima
         Se il carattere della stringa alla posizione i-esima con quello alla posizione j-esima sono diversi
-            Stampa "La parola inserita non è palindroma."
             La variabile Booleana diventa false
             Esci dal ciclo
 
-Se la variabile Booleana è true
-    Stampa "La parola inserita è palindroma"
+    Se la variabile Booleana è true
+        Stampa "La parola inserita è palindroma"
+    Altrimenti
+        Stampa "La parola inserita non è palindroma."
 
 
 //////////////////////////////////
