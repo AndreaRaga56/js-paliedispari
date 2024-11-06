@@ -1,8 +1,8 @@
 let userW = prompt("Inserisci la parola, scoprirai se è palindroma");
 
-parola(userW);
+let palindroma = isPalindroma(userW);
 
-function parola(x) {
+function isPalindroma(x) {
     x= x.toUpperCase();
     let bool = true;
 
@@ -12,12 +12,13 @@ function parola(x) {
             break;
         }
     }
+    return bool;
+}
 
-    if (bool==true){
-        console.log("La parola inserita è palindroma.");
-    } else{
-        console.log("La parola inserita non è palindroma.");
-    }
+if (palindroma==true){
+    console.log("La parola inserita è palindroma.");
+} else{
+    console.log("La parola inserita non è palindroma.");
 }
 
 ////////////////////////////////////////////////////////////////
@@ -33,7 +34,7 @@ function parola(x) {
 
 // controlliamo le due parole
 
-word(userW);
+let palindroma2 = word(userW);
 
 function word(x) {
     x= x.toUpperCase();
@@ -48,8 +49,14 @@ function word(x) {
     }
 
     if (y==x){
-        console.log("La parola inserita è palindroma.");
+        return true;
     } else{
-        console.log("La parola inserita non è palindroma.");
+        return false
     }
+}
+
+if (palindroma2==true){
+    console.log("La parola inserita è palindroma.");
+} else{
+    console.log("La parola inserita non è palindroma.");
 }
